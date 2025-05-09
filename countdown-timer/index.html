@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Countdown Timer</title>
 </head>
 <body>
     <div class="container">
         <h1>Countdown Timer</h1>
-        <div class="timer">
+        <div id="countdown" class="countdown">
             <span id="days">00</span> days
             <span id="hours">00</span> hours
             <span id="minutes">00</span> minutes
             <span id="seconds">00</span> seconds
         </div>
+        <div class="input-container">
+            <input type="number" id="daysInput" placeholder="Days" min="0">
+            <input type="number" id="hoursInput" placeholder="Hours" min="0" max="23">
+            <input type="number" id="minutesInput" placeholder="Minutes" min="0" max="59">
+            <input type="number" id="secondsInput" placeholder="Seconds" min="0" max="59">
+        </div>
         <button id="startButton">Start Countdown</button>
-        <button id="stopButton">Stop Countdown</button>
-        <button id="resetButton">Reset Countdown</button>
     </div>
     <script src="script.js"></script>
 </body>
