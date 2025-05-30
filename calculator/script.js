@@ -55,7 +55,7 @@ function calculate(firstOperand, secondOperand, operator) {
   } else if (operator === "%") {
     return firstOperand / secondOperand * 100;
   } else if (operator === "√") {
-    return Math.sqrt(firstOperand);
+    return Math.pow(firstOperand,1/secondOperand);
   }
   return secondOperand;
 }
