@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #092480;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
