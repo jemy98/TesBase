@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #010a01;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -12,41 +13,68 @@ body {
     overflow: hidden;
     align-items: center;
 }
+
 .container {
     display: flex;
     flex-direction: column;
 }
+
 header {
     margin-bottom: 30px;
     text-align: center;
 }
+
 header h1 {
-    color:#092480;
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
+
 header h2 {
-    color: #333;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 400;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
+
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 .carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .carousel-slide img {
     width: 100%;
     border-radius: 15px;
 }
-.prev, .next {
+
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -59,15 +87,20 @@ header h2 {
     z-index: 1;
     font-size: 30px;
 }
+
 .prev {
     left: 10px;
 }
+
 .next {
     right: 10px;
 }
-.prev:hover, .next:hover {
+
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 .carousel-indicators {
     position: absolute;
     bottom: 20px;
@@ -77,25 +110,32 @@ header h2 {
     justify-content: center;
     gap: 10px;
 }
-.indicator{
+
+.indicator {
     width: 12px;
     height: 12px;
-    background-color: #6d1b1b;
+    background-color: rgb(255, 255, 255, 0.5);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .indicator.active {
-    background-color: #092480;
+    background-color: rgb(255, 255, 255, 0.9);
 }
+
 .indicator:hover {
-    background-color: #092480;
+    background-color: rgb(255, 255, 255, 0.7);
 }
+
 @media (max-width: 768px) {
-    .prev, .next {
+
+    .prev,
+    .next {
         padding: 8px;
         font-size: 24px;
     }
+
     .indicator {
         width: 10px;
         height: 10px;

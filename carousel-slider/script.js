@@ -7,7 +7,7 @@ const totalImages = carouselImages.length;
 let counter = 0;
 let interval;
 function updateCarousel() {
-    carouselSlide.style.transform = 'translateX(' + (-counter * 100) + '%)';
+    carouselSlide.style.transform = `translateX(${-counter * 100}%`;
     indicators.forEach((indicator, index) => {
         indicator.classList.toggle('active', index === counter);
     });
@@ -24,11 +24,11 @@ function prevSlide() {
 }
 function resetInterval() {
     clearInterval(interval);
-    interval = setInterval(nextSlide, 3000);
+    interval = setInterval(nextSlide, 5000);
 }
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
-interval = setInterval(nextSlide, 3000);
+interval = setInterval(nextSlide, 5000);
 indicators.forEach((indicator, index) => {
     indicator.addEventListener('click', () => {
         counter = index;
