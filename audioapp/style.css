@@ -1,0 +1,83 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5eaea;
+    margin: 0;
+}
+.container {
+    display: flex;
+    padding: 20px;
+    background-color: #f5f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    border-right: 1px solid #f5e33f;
+}
+.audio-controls {
+    display: flex;
+    width: 300px;
+    align-items: center;
+}
+.progress{
+    flex-grow: 1;
+    height: 10px;
+    background-color: #ebe08d;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+#progress-bar {
+    height: 100%;
+    background-color: #f5e33f;
+    width: 0.5%;
+    min-width: 2px;
+    transition: width 0.1s ease;
+}
+#current-track {
+    color: #333;
+    margin-top: 10px;
+}
+.audio-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.upload {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f5e33f;
+    color: #333;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#audio-upload {
+    display: none;
+}
+#playlist {
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.5) transparent;
+}
+#playlist::-webkit-scrollbar {
+    width: 6px;
+}
+#playlist::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}

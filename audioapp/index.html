@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="audio-player">
+            <div class="audio-control">
+                <button id="play-pause">Play</button>
+                <button id="pause">Pause</button>
+                <button id="next">Next</button>
+                <button id="previous">Previous</button>
+                <div class="progress">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <p id="current-track">No Audio Selected</p>
+            <audio src="" id="audio"></audio>
+        </div>
+        <div class="audio-list">
+            <label for="audio-upload" class="upload"> Import Audio </label>
+            <input type="file" id="audio-upload" accept="audio/*" multiple>
+            <ul id="playlist">
+                <!-- Audio files will be listed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
