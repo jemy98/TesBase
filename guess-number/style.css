@@ -22,3 +22,37 @@ h1 {
     font-size: 2em;
     margin-bottom: 20px;
 }
+input{
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    margin-top: 10px;
+    background-color: #499fca;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #3b7fae;
+}
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+#resetGame{
+    background-color: #28a745;
+}
+#resetGame:hover {
+    background-color: #218838;
+}
