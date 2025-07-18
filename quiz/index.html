@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz</h1>
+      <div class="question-container" id="question-container">
+        <p id="question">Text</p>
+      </div>
+      <div class="answers-button" id="answers-button"></div>
+      <button class="next-btn">Next</button>
+      <div class="result-container" id="result-container" display="none">
+        <h2>Result</h2>
+        <p id="result-text">
+          You scored <span id="score"></span> out of
+          <span id="total-questions"></span>.
+        </p>
+        <button id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
