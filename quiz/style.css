@@ -28,4 +28,35 @@ h1 {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}.answers-button {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+.next-btn, .restart-btn {
+    background-color: #2196F3;
+}
+.next-btn:hover, .restart-btn:hover {
+    background-color: #1976D2;
+}
+.result-container {
+    text-align: center;
+}
+#score {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 2em;
 }
