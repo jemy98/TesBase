@@ -1,3 +1,4 @@
+
 const locationElement = document.getElementById('location');
 const temperatureElement = document.getElementById('temperature');
 const descriptionElement = document.getElementById('description');

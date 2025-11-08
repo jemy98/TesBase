@@ -17,3 +17,28 @@ body{
     max-width: 600px;
     text-align: center;
 }
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: #b859d4;
+}
+.weather-info {
+    margin-bottom: 20px;
+}
+.weather-info p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #777;
+}
+.weather-info h2 {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #333;
+}
+.weather-icon {
+    margin-top: 20px;
+}
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+}
